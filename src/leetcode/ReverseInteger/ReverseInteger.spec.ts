@@ -16,4 +16,9 @@ describe('ReverseInteger', () => {
         const expected = 0;
         expect(actual).toStrictEqual(expected);
     });
+    it('Should return 0 if 0', () => {
+        const actual = reverse(0);
+        const expected = 0;
+        expect(actual).toStrictEqual(expected);
+    });
 });
