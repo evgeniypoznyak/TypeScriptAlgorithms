@@ -6,19 +6,19 @@ describe('ReverseInteger', () => {
     const expected = 321;
     expect(actual).toStrictEqual(expected);
   });
-  // it('Should return 0 if max positive', () => {
-  //   const actual = reverse(1534236469);
-  //   const expected = 0;
-  //   expect(actual).toStrictEqual(expected);
-  // });
-  // it('Should return 0 if max negative', () => {
-  //   const actual = reverse(-1563847412);
-  //   const expected = 0;
-  //   expect(actual).toStrictEqual(expected);
-  // });
-  // it('Should return 0 if 0', () => {
-  //   const actual = reverse(0);
-  //   const expected = 0;
-  //   expect(actual).toStrictEqual(expected);
-  // });
+  it('Should return 0 if max positive', () => {
+    const actual = reverse(1534236469);
+    const expected = 0;
+    expect(actual).toStrictEqual(expected);
+  });
+  it('Should return 0 if max negative', () => {
+    const actual = reverse(-1563847412);
+    const expected = 0;
+    expect(actual).toStrictEqual(expected);
+  });
+  it('Should return 0 if 0', () => {
+    const actual = reverse(0);
+    const expected = 0;
+    expect(actual).toStrictEqual(expected);
+  });
 });
