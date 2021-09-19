@@ -11,6 +11,5 @@ export const reverse = (x: number): number => {
   if (result < minimum || result > maximum) {
     return 0;
   }
-
   return result;
 };
