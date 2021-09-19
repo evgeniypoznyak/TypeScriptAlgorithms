@@ -12,17 +12,17 @@ Output: [true,true,true,false,true]
  */
 
 export const kidsWithCandies = (
-    candies: number[],
-    extraCandies: number
+  candies: number[],
+  extraCandies: number
 ): boolean[] => {
-    const max = Math.max(...candies);
-    const result: boolean[] = [];
-    for (let i = 0; i < candies.length; i++) {
-        if (candies[i] + extraCandies < max) {
-            result.push(false);
-        } else {
-            result.push(true);
-        }
+  const max = Math.max(...candies);
+  const result: boolean[] = [];
+  for (let i = 0; i < candies.length; i++) {
+    if (candies[i] + extraCandies < max) {
+      result.push(false);
+    } else {
+      result.push(true);
     }
-    return result;
+  }
+  return result;
 };
