@@ -31,6 +31,21 @@ Constraints:
 1 <= n <= 231 - 1
  */
 
-export const isHappy = (n: number): boolean => {
-  return n !== 2;
+const sumOfSquares = (numString: number) =>
+  numString
+    .toString()
+    .split('')
+    .reduce((sum, num) => {
+      return sum + Math.pow(Number(num), 2);
+    }, 0);
+
+const isHappy = (n: number): boolean => {
+  const seen: any = {};
+  while (n !== 1 && !seen[n]) {
+    seen[n] = true;
+    n = sumOfSquares(n);
+  }
+  return n === 1;
 };
+
+export default isHappy;

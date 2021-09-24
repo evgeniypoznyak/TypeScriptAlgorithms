@@ -1,4 +1,4 @@
-import { isHappy } from './solution';
+import isHappy from './solution';
 
 describe('202. Happy Number', () => {
   it('Should 19 return true', () => {
@@ -6,5 +6,8 @@ describe('202. Happy Number', () => {
   });
   it('Should 2 return false', () => {
     expect(isHappy(2)).toBeFalsy();
+  });
+  it('Should 3 return false', () => {
+    expect(isHappy(3)).toBeFalsy();
   });
 });
